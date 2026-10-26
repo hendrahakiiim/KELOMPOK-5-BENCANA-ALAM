@@ -1,0 +1,131 @@
+/* =================================================== */
+/* 1. DESKTOP VIEWPORT (1440px) & LAYAR LEBAR          */
+/* =================================================== */
+@media screen and (min-width: 1024px) {
+    /* Menjaga navigasi desktop tetap muncul & rapi */
+    .menu-toggle {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    /* Memastikan layout beranda 3 kolom presisi pada 1440px */
+    .disaster-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    /* Memastikan layout mitigasi 3 kolom */
+    .mitigation-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+/* =================================================== */
+/* 2. TABLET VIEWPORT (Pengujian 768px)               */
+/* =================================================== */
+@media screen and (max-width: 1023px) {
+    /* Transisi Navbar ke Hamburger Menu */
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f7f5f0;
+        border-bottom: 4px solid #d3c4b1;
+        padding: 18px 30px;
+        gap: 14px;
+    }
+
+    .nav-links.show {
+        display: flex !important;
+    }
+
+    /* Beranda (index.html) di Tablet 768px */
+    body.home-page {
+        min-height: 100vh;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .home-container {
+        padding: 30px 20px 40px 20px;
+    }
+
+    .disaster-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Kolom untuk Tablet */
+        gap: 24px;
+        margin-bottom: 35px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    /* Detail Pages di Tablet 768px */
+    .hero-content-wrapper {
+        padding: 25px 35px;
+    }
+
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .hero-grid {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .side-images {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .side-images img {
+        height: 180px;
+    }
+
+    .single-image-circle {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+    }
+
+    .triple-images-row img {
+        width: 31%;
+        height: 160px;
+    }
+
+    .volcano-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    /* Layar 2 Mitigasi di Tablet */
+    .mitigation-section {
+        padding: 50px 30px;
+    }
+
+    .mitigation-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+}
