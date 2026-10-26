@@ -1,4 +1,6 @@
-/* Reset Basic & Font Setup */
+/* =================================================== */
+/* 1. RESET & STYLING DASAR                           */
+/* =================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -9,24 +11,26 @@
 body {
     background-color: #f7f5f0;
     color: #4a3e3d;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
-/* Header & Navigasi menggunakan Flexbox */
+/* Header & Navigasi Utama */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 40px;
+    padding: 15px 40px;
     border-top: 4px solid #d3c4b1;
     border-bottom: 4px solid #d3c4b1;
     background-color: #f7f5f0;
+    position: relative;
+    z-index: 100;
 }
 
 .logo h1 {
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: #5c4939;
     font-weight: bold;
@@ -41,33 +45,66 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #5c4939;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.5px;
     transition: color 0.2s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a.active,
+.nav-links a:hover {
     color: #8c6d53;
 }
 
-/* Container & Hero Section */
-.container {
-    max-width: 1080px;
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #5c4939;
+    cursor: pointer;
+}
+
+/* =================================================== */
+/* 2. STYLING KHUSUS HALAMAN BERANDA (index.html)     */
+/* =================================================== */
+/* Mengaktifkan scrollbar dan membiarkan tinggi fleksibel agar tidak terpotong */
+body.home-page {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    overflow-y: auto; /* Memungkinkan scroll lancar */
+}
+
+.home-container {
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 30px 20px 50px 20px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
 }
 
 .hero-text h2 {
     font-size: 22px;
     letter-spacing: 1.5px;
     color: #5c4939;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: bold;
     text-transform: uppercase;
+    line-height: 1.3;
 }
 
 .hero-text p {
@@ -75,14 +112,15 @@ body {
     line-height: 1.6;
     color: #635851;
     max-width: 780px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto;
 }
 
-/* Layout Grid Kartu Bencana menggunakan CSS Grid */
 .disaster-grid {
-    display: grid;
+   display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    width: 100%;
+    margin-bottom: 40px; /* Jarak antara kartu foto dan footer */
 }
 
 .card {
@@ -106,8 +144,10 @@ body {
     border-radius: 18px;
 }
 
-/* Footer */
-footer {
+/* Pengaturan khusus Footer di Beranda */
+body.home-page footer {
+    width: 100%;
+    margin-top: auto; /* Memastikan footer selalu terdorong paling bawah */
     border-top: 4px solid #d3c4b1;
     border-bottom: 4px solid #d3c4b1;
     padding: 12px 0;

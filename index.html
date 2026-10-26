@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siaga Bencana - Portal Edukasi & Mitigasi Bencana</title>
-    <!-- Menghubungkan CSS Eksternal -->
+    <title>Beranda - SIAGA BENCANA</title>
+    <!-- Urutan stylesheet harus style1.css dulu, lalu responsif.css -->
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/responsif.css">
 </head>
-<body>
+<body class="home-page">
 
-    <!-- Header & Navigasi Utama -->
+    <!-- Header & Navigasi -->
     <header class="navbar">
         <div class="logo">
             <h1>SIAGA BENCANA</h1>
         </div>
-        <nav class="nav-links">
+        <!-- Tombol Hamburger untuk Layar HP/Tablet -->
+        <button class="menu-toggle" aria-label="Buka Menu" onclick="toggleMenu()">&#9776;</button>
+        
+        <!-- Menu Navigasi (Wajib ada id="navMenu") -->
+        <nav class="nav-links" id="navMenu">
             <a href="index.html" class="active">BERANDA</a>
             <a href="pages/gempa.html">GEMPA BUMI</a>
             <a href="pages/tsunami.html">TSUNAMI</a>
@@ -26,60 +30,46 @@
         </nav>
     </header>
 
-    <!-- Konten Utama Semantik -->
-    <main class="container">
-        <!-- Hero Section / Intro -->
+    <!-- Konten Utama Beranda -->
+    <main class="home-container">
         <section class="hero-text">
             <h2>SELAMAT DATANG DI PORTAL SIAGA BENCANA & EDUKASI MITIGASI</h2>
-            <p>
-                Indonesia berada di jalur Cincin Api Pasifik (Ring of Fire), yang membuatnya rawan terhadap berbagai jenis bencana alam. Portal ini hadir sebagai panduan kesiapsiagaan untuk membantu Anda dan keluarga tetap aman sebelum, saat, dan setelah bencana terjadi.
-            </p>
+            <p>Indonesia berada di jalur Cincin Api Pasifik (Ring of Fire), yang membuatnya rawan terhadap berbagai jenis bencana alam. Portal ini hadir sebagai panduan kesiapsiagaan untuk membantu Anda dan keluarga tetap aman sebelum, saat, dan setelah bencana terjadi.</p>
         </section>
 
-        <!-- Grid Kartu Edukasi Bencana -->
+        <!-- 6 Kartu Bencana -->
         <section class="disaster-grid">
-            <article class="card">
-                <a href="pages/gempa.html">
-                    <img src="Foto/bg gempa bumi.jpg" alt="Edukasi dan Mitigasi Bencana Gempa Bumi">
-                </a>
-            </article>
-
-            <article class="card">
-                <a href="pages/tsunami.html">
-                    <img src="Foto/bg tsunami.jpg" alt="Edukasi dan Mitigasi Bencana Tsunami">
-                </a>
-            </article>
-
-            <article class="card">
-                <a href="pages/banjir.html">
-                    <img src="Foto/bg banjir.jpg" alt="Edukasi dan Mitigasi Bencana Banjir">
-                </a>
-            </article>
-
-            <article class="card">
-                <a href="pages/gunung-meletus.html">
-                    <img src="Foto/bg gunung meletus.jpg" alt="Edukasi dan Mitigasi Bencana Gunung Meletus">
-                </a>
-            </article>
-
-            <article class="card">
-                <a href="pages/kebakaran.html">
-                    <img src="Foto/bg kebakaran hutan.jpg" alt="Edukasi dan Mitigasi Bencana Kebakaran Hutan">
-                </a>
-            </article>
-
-            <article class="card">
-                <a href="pages/longsor.html">
-                    <img src="Foto/bg longsor.jpg" alt="Edukasi dan Mitigasi Bencana Tanah Longsor">
-                </a>
-            </article>
+            <div class="card">
+                <a href="pages/gempa.html"><img src="Foto/bg gempa bumi.jpg" alt="Gempa Bumi"></a>
+            </div>
+            <div class="card">
+                <a href="pages/tsunami.html"><img src="Foto/bg tsunami.jpg" alt="Tsunami"></a>
+            </div>
+            <div class="card">
+                <a href="pages/banjir.html"><img src="Foto/bg banjir.jpg" alt="Banjir"></a>
+            </div>
+            <div class="card">
+                <a href="pages/gunung-meletus.html"><img src="Foto/bg gunung meletus.jpg" alt="Gunung Meletus"></a>
+            </div>
+            <div class="card">
+                <a href="pages/kebakaran.html"><img src="Foto/bg kebakaran hutan.jpg" alt="Kebakaran Hutan"></a>
+            </div>
+            <div class="card">
+                <a href="pages/longsor.html"><img src="Foto/bg longsor.jpg" alt="Longsor"></a>
+            </div>
         </section>
     </main>
 
-    <!-- Footer Semantik -->
+    <!-- Footer Beranda -->
     <footer>
         <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
     </footer>
 
+    <!-- Script JavaScript Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
