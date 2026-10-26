@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gempa Bumi - SIAGA BENCANA</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/responsif.css">
+</head>
+<body class="detail-page">
+
+    <!-- Header & Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>SIAGA BENCANA</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Buka Menu" onclick="toggleMenu()">&#9776;</button>
+        <nav class="nav-links" id="navMenu">
+            <a href="../index.html">BERANDA</a>
+            <a href="gempa.html" class="active">GEMPA BUMI</a>
+            <a href="tsunami.html">TSUNAMI</a>
+            <a href="banjir.html">BANJIR</a>
+            <a href="gunung-meletus.html">GUNUNG MELETUS</a>
+            <a href="kebakaran.html">KEBAKARAN HUTAN</a>
+            <a href="longsor.html">LONGSOR</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LAYAR 1: Background Utama (Gambar 1: bg gempa bumi.jpg) -->
+        <section class="hero-section bg-gempa-hero">
+            <div class="hero-content-wrapper">
+                
+                <!-- Judul Halaman -->
+                <h2 class="hero-title">Gempa Bumi</h2>
+
+                <!-- Layout Konten (Foto Kiri + Teks Kanan) -->
+                <div class="hero-grid">
+                    
+                    <!-- Foto Di Dalam Background (Gambar 2: gempa 1.jpg & Gambar 3: gempa 2.jpg) -->
+                    <div class="side-images">
+                        <img src="../Foto/gempa 1.jpg" alt="Gempa Cianjur 1">
+                        <img src="../Foto/gempa 2.jpg" alt="Gempa Cianjur 2">
+                    </div>
+
+                    <!-- Teks Artikel Studi Kasus -->
+                    <div class="article-text">
+                        <p>Gempa bumi berkekuatan 5,6 Mw mengguncang Kabupaten Cianjur pada 21 November 2022 akibat aktivitas Sesar Cugenang. Kedalamannya yang dangkal (10 km) memicu guncangan kuat hingga skala MMI IX, merusak ribuan bangunan, serta menyebabkan tanah longsor yang menutup akses jalan utama.</p>
+                        <p>Bencana ini menjadi yang paling mematikan di Jawa Barat sejak 2009 dengan menelan ratusan korban jiwa—335 orang versi BNPB dan 635 orang versi Pemkab Cianjur—di mana sepertiganya adalah anak-anak. Selain melukai lebih dari 10.000 orang dan memaksa puluhan ribu warga mengungsi, dampak kerusakan juga meruntuhkan berbagai fasilitas publik, sekolah, serta tempat ibadah.</p>
+                        <p>Proses evakuasi melibatkan ribuan personel gabungan yang didukung bantuan logistik, medis, dan dana dari pemerintah pusat, BUMN, masyarakat luas, hingga donor internasional. Pemerintah kini memfokuskan pemulihan melalui pengerjaan hunian tetap tahan gempa dan dana stimulan rumah, walau sempat diwarnai isu kontroversi terkait dugaan penyalahgunaan donasi oleh kelompok terorisme.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer Bar Gelap Pemisah Layar 1 dan Layar 2 -->
+            <div class="divider-bar">
+                <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+            </div>
+        </section>
+
+        <!-- LAYAR 2: Panduan Mitigasi (Muncul Saat Di-scroll ke Bawah) -->
+        <section class="mitigation-section">
+            <div class="container">
+                <h2 class="section-title">PANDUAN KESIAPSIAGAAN GEMPA BUMI</h2>
+                <p class="section-subtitle">Gempa bumi terjadi secara tiba-tiba tanpa peringatan awal. Ketahui tindakan yang tepat untuk melindungi diri dan keluarga Anda.</p>
+                
+                <div class="mitigation-cards">
+                    <article class="mitigation-card">
+                        <h3>SEBELUM BENCANA</h3>
+                        <ul>
+                            <li>Siapkan Tas Siaga Bencana di tempat yang mudah dijangkau.</li>
+                            <li>Tentukan tempat berlindung aman di rumah (misal: di bawah meja yang kokoh).</li>
+                            <li>Ketahui jalur evakuasi dan titik kumpul terdekat.</li>
+                            <li>Pastikan perabotan berat tercantum kuat ke dinding agar tidak roboh.</li>
+                        </ul>
+                    </article>
+
+                    <article class="mitigation-card">
+                        <h3>SAAT BENCANA</h3>
+                        <ul>
+                            <li><strong>Di Dalam Ruangan:</strong> Lakukan Drop, Cover, Hold On (Merunduk, Berlindung di bawah meja, dan Berpegangan).</li>
+                            <li><strong>Di Luar Ruangan:</strong> Hindari bangunan tinggi, tiang listrik, pohon, dan papan reklame.</li>
+                            <li>Jangan gunakan lift, selalu gunakan tangga darurat.</li>
+                            <li>Jika sedang mengemudi, segera menepi di tempat terbuka dan berhenti.</li>
+                        </ul>
+                    </article>
+
+                    <article class="mitigation-card">
+                        <h3>SESUDAH BENCANA</h3>
+                        <ul>
+                            <li>Keluar dari bangunan secara tertib dan waspada gempa susulan.</li>
+                            <li>Periksa cedera pada diri sendiri dan orang di sekitar Anda.</li>
+                            <li>Matikan aliran listrik dan gas untuk mencegah potensi kebakaran.</li>
+                            <li>Pantau informasi resmi melalui radio atau kanal berita terpercaya.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Utama -->
+    <footer>
+        <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
