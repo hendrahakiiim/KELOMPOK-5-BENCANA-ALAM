@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banjir - SIAGA BENCANA</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/responsif.css">
+</head>
+<body class="detail-page">
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>SIAGA BENCANA</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Buka Menu" onclick="toggleMenu()">&#9776;</button>
+        <nav class="nav-links" id="navMenu">
+            <a href="../index.html">BERANDA</a>
+            <a href="gempa.html">GEMPA BUMI</a>
+            <a href="tsunami.html">TSUNAMI</a>
+            <a href="banjir.html" class="active">BANJIR</a>
+            <a href="gunung-meletus.html">GUNUNG MELETUS</a>
+            <a href="kebakaran.html">KEBAKARAN HUTAN</a>
+            <a href="longsor.html">LONGSOR</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LAYAR 1: Hero Section (Background bg banjir.jpg) -->
+        <section class="hero-section bg-banjir-hero">
+            <div class="hero-content-wrapper">
+                <h2 class="hero-title">Banjir</h2>
+
+                <!-- Layout 3 Foto Berjejer di Atas -->
+                <div class="triple-images-row">
+                    <img src="../Foto/banjir 1.jpg" alt="Banjir 1">
+                    <img src="../Foto/banjir 2.jpg" alt="Banjir 2">
+                    <img src="../Foto/banjir 3.jpg" alt="Banjir 3">
+                </div>
+
+                <!-- Teks Artikel di Tengah Bawah -->
+                <div class="article-text-center">
+                    <p>Banjir akibat hujan deras merendam sejumlah wilayah di Denpasar dan Badung, Bali, pada Minggu (14/12) dini hari. Bencana ini merenggut satu korban jiwa WNA, merendam permukiman di empat kecamatan, serta sempat memaksa 165 warga mengungsi sebelum akhirnya air berangsur surut pada sore harinya.</p>
+                    <p>BMKG memperingatkan potensi hujan lebat akibat bibit siklon 93S yang masih membayangi hingga 18 Desember. Menyikapi hal tersebut, BNPB mengimbau warga dan pemerintah daerah tetap waspada terhadap risiko banjir susulan serta aktif memantau potensi bahaya melalui kanal resmi dan platform inaRISK.</p>
+                </div>
+            </div>
+
+            <div class="divider-bar">
+                <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+            </div>
+        </section>
+
+        <!-- LAYAR 2: Panduan Mitigasi -->
+        <section class="mitigation-section">
+            <div class="container">
+                <h2 class="section-title">PANDUAN KESIAPSIAGAAN BANJIR</h2>
+                <p class="section-subtitle">Banjir sering kali terjadi akibat curah hujan tinggi dan penyumbatan aliran air. Langkah pencegahan dan kewaspadaan sangat penting.</p>
+
+                <div class="mitigation-cards">
+                    <article class="mitigation-card">
+                        <h3>SEBELUM BENCANA</h3>
+                        <ul>
+                            <li>Menjaga kebersihan saluran air dan tidak membuang sampah sembarangan.</li>
+                            <li>Menyiapkan kantong pasir untuk menahan luapan air jika diperlukan.</li>
+                            <li>Amankan barang elektronik dan dokumen penting ke tempat yang lebih tinggi.</li>
+                        </ul>
+                    </article>
+                    <article class="mitigation-card">
+                        <h3>SAAT BENCANA</h3>
+                        <ul>
+                            <li>Matikan sumber listrik dari sakelar utama (MCB) segera saat air mulai masuk rumah.</li>
+                            <li>Evakuasi diri ke tempat yang lebih tinggi (lantai atas atau tempat pengungsian).</li>
+                            <li>Hindari berjalan atau mengemudi menembus arus air banjir yang deras.</li>
+                        </ul>
+                    </article>
+                    <article class="mitigation-card">
+                        <h3>SESUDAH BENCANA</h3>
+                        <ul>
+                            <li>Gunakan sepatu boots dan sarung tangan saat membersihkan sisa banjir untuk menghindari infeksi.</li>
+                            <li>Waspadai sengatan listrik dari instalasi yang masih basah.</li>
+                            <li>Pastikan makanan dan air yang dikonsumsi bebas dari kontaminasi air banjir.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
