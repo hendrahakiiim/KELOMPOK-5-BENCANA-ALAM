@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebakaran Hutan - SIAGA BENCANA</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/responsif.css">
+</head>
+<body class="detail-page">
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>SIAGA BENCANA</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Buka Menu" onclick="toggleMenu()">&#9776;</button>
+        <nav class="nav-links" id="navMenu">
+            <a href="../index.html">BERANDA</a>
+            <a href="gempa.html">GEMPA BUMI</a>
+            <a href="tsunami.html">TSUNAMI</a>
+            <a href="banjir.html">BANJIR</a>
+            <a href="gunung-meletus.html">GUNUNG MELETUS</a>
+            <a href="kebakaran.html" class="active">KEBAKARAN HUTAN</a>
+            <a href="longsor.html">LONGSOR</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LAYAR 1: Hero Section (Background bg kebakaran hutan.jpg) -->
+        <section class="hero-section bg-kebakaran-hero">
+            <div class="hero-content-wrapper">
+                <h2 class="hero-title">Kebakaran Hutan</h2>
+
+                <div class="hero-grid">
+                    <!-- 2 Foto di Kiri -->
+                    <div class="side-images">
+                        <img src="../Foto/kebakaran hutan 1.jpg" alt="Kebakaran Hutan Satwa">
+                        <img src="../Foto/kebakaran hutan 2.jpg" alt="Petugas Kebakaran Hutan">
+                    </div>
+
+                    <!-- Teks Artikel di Kanan -->
+                    <div class="article-text">
+                        <p>Kebakaran hutan dan lahan menjadi ancaman serius bagi kehidupan satwa liar. Berdasarkan data BPBD Kalsel, selama periode 1 September sampai dengan 14 September 2026, jumlah kejadian kebakaran hutan dan lahan di Kalsel adalah 3.220 kali dengan perkiraan luasan 21.414,43 hektar. Kabupaten Hulu Sungai Selatan menjadi salah satu dari tiga kabupaten/kota dengan luasan terbakar terluas yaitu 3.786,71 hektar.</p>
+                        <p>Tindakan penanganan yang dilakukan yaitu berkoordinasi dg pemdes dan pihak terkait; memastikan kematian jenis dan jumlah satwa selanjutnya dilakukan penguburan; mengecek keberadaan satwa di lokasi bila ditemukan ada yang sakit akan dievakuasi; mengkaji kelayakan habitat dan mengambil tindakan translokasi bila diperlukan; dan sosialisasi/edukasi ke masyarakat.</p>
+                        <p>BKSDA Kalsel berkoordinasi dengan Pemkab dan para pihak terkait, mendorong skema Areal Preservasi (AP) untuk memperluas ruang konservasi dan meneguhkan komitmen bersama menjaga kehidupan liar. Sesuai UU no. 32 tahun 2024 tentang perubahan atas UU no. 5 tahun 1990 tentang KSDAE, AP merujuk pada wilayah di luar Kawasan Suaka Alam (KSA) dan Kawasan Pelestarian Alam (KPA) yang dipertahankan kondisi ekologisnya untuk mendukung fungsi penyangga kehidupan dan menjaga keanekaragaman hayati.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-bar">
+                <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+            </div>
+        </section>
+
+        <!-- LAYAR 2: Panduan Mitigasi -->
+        <section class="mitigation-section">
+            <div class="container">
+                <h2 class="section-title">PANDUAN KESIAPSIAGAAN KEBAKARAN HUTAN & LAHAN</h2>
+                <p class="section-subtitle">Kebakaran hutan dan lahan (karhutla) sering dipicu oleh musim kemarau panjang, aktivitas pembukaan lahan dengan cara dibakar, atau kelalaian manusia. Pahami langkah mitigasinya.</p>
+
+                <div class="mitigation-cards">
+                    <article class="mitigation-card">
+                        <h3>SEBELUM BENCANA</h3>
+                        <ul>
+                            <li>Hindari membakar sampah atau membuka lahan dengan cara dibakar saat musim kemarau.</li>
+                            <li>Jangan membuang puntung rokok sembarangan di area hutan atau semak belukar.</li>
+                            <li>Hindari membuat api unggun di area rawan atau pastikan api benar-benar padam sebelum ditinggalkan.</li>
+                            <li>Sediakan stok masker minimal tipe N95 di rumah untuk mengantisipasi kabut asap.</li>
+                        </ul>
+                    </article>
+                    <article class="mitigation-card">
+                        <h3>SAAT BENCANA</h3>
+                        <ul>
+                            <li>Gunakan masker (seperti N95) saat keluar rumah untuk melindungi saluran pernapasan dari kabut asap.</li>
+                            <li>Segera jauhi arah pergerakan api dan tiupan angin yang membawa titik api.</li>
+                            <li>Tutup celah ventilasi rumah dengan kain basah untuk mencegah masuknya asap pekat.</li>
+                            <li>Laporkan titik api awal (hotspot) kepada satgas karhutla atau pihak berwenang setempat.</li>
+                        </ul>
+                    </article>
+                    <article class="mitigation-card">
+                        <h3>SESUDAH BENCANA</h3>
+                        <ul>
+                            <li>Kurangi aktivitas luar ruangan sampai indeks kualitas udara (ISPU) dinyatakan aman.</li>
+                            <li>Segera periksakan diri ke fasilitas kesehatan jika mengalami ISPA atau sesak napas.</li>
+                            <li>Bantu pemulihan kawasan hutan dengan mendukung program reboisasi dan penanaman pohon kembali.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

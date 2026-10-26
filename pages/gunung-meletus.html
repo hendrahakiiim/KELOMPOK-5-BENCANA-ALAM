@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunung Meletus - SIAGA BENCANA</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/responsif.css">
+</head>
+<body class="detail-page">
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>SIAGA BENCANA</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Buka Menu" onclick="toggleMenu()">&#9776;</button>
+        <nav class="nav-links" id="navMenu">
+            <a href="../index.html">BERANDA</a>
+            <a href="gempa.html">GEMPA BUMI</a>
+            <a href="tsunami.html">TSUNAMI</a>
+            <a href="banjir.html">BANJIR</a>
+            <a href="gunung-meletus.html" class="active">GUNUNG MELETUS</a>
+            <a href="kebakaran.html">KEBAKARAN HUTAN</a>
+            <a href="longsor.html">LONGSOR</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LAYAR 1: Hero Section (Background bg gunung meletus.jpg) -->
+        <section class="hero-section bg-gunung-hero">
+            <div class="hero-content-wrapper">
+                <h2 class="hero-title">Gunung Meletus</h2>
+
+                <!-- Grid 4 Gunung Berapi -->
+                <div class="volcano-grid">
+                    <div class="volcano-item">
+                        <h4>GUNUNG AGUNG</h4>
+                        <img src="../Foto/gunung agung.jpg" alt="Gunung Agung">
+                        <span>1963</span>
+                    </div>
+                    <div class="volcano-item">
+                        <h4>GUNUNG KRAKATAU</h4>
+                        <img src="../Foto/gunung krakatau.jpg" alt="Gunung Krakatau">
+                        <span>1883</span>
+                    </div>
+                    <div class="volcano-item">
+                        <h4>GUNUNG MERAPI</h4>
+                        <img src="../Foto/gunung merapi.jpg" alt="Gunung Merapi">
+                        <span>2010</span>
+                    </div>
+                    <div class="volcano-item">
+                        <h4>GUNUNG TAMBORA</h4>
+                        <img src="../Foto/gunung tambora.jpg" alt="Gunung Tambora">
+                        <span>1815</span>
+                    </div>
+                </div>
+
+                <!-- Teks Artikel di Bawah Grid -->
+                <div class="article-text-center">
+                    <p>Indonesia mencatatkan beberapa letusan gunung berapi terdahsyat dalam sejarah yang dampaknya terasa hingga skala global. Letusan Gunung Toba (~74.000 tahun lalu) membentuk Danau Toba, sementara letusan Tambora (1815) dan Krakatau (1883) memicu tsunami, menewaskan puluhan ribu jiwa, serta menurunkan suhu bumi hingga mengubah iklim dunia.</p>
+                    <p>Dampak besar serupa juga terjadi pada letusan Gunung Agung (1963) yang merubah suhu global secara ekstrem, erupsi Gunung Galunggung (1982-1983) yang menyebarkan abu hingga Samudra Hindia, serta erupsi terbesar Gunung Merapi (2010) dalam seratus tahun terakhir.</p>
+                </div>
+            </div>
+
+            <div class="divider-bar">
+                <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+            </div>
+        </section>
+
+        <!-- LAYAR 2: Panduan Mitigasi -->
+        <section class="mitigation-section">
+            <div class="container">
+                <h2 class="section-title">PANDUAN KESIAPSIAGAAN GUNUNG MELETUS</h2>
+                <p class="section-subtitle">Erupsi gunung api memuntahkan abu vulkanik, gas beracun, dan lahar panas. Patuhi radius zona bahaya yang ditetapkan pihak berwenang.</p>
+
+                <div class="mitigation-cards">
+                    <article class="mitigation-card">
+                        <h3>SEBELUM BENCANA</h3>
+                        <ul>
+                            <li>Pahami tingkat status gunung api (Normal, Waspada, Siaga, Awas).</li>
+                            <li>Siapkan masker N95 dan kacamata pelindung (goggles) untuk mengantisipasi abu vulkanik.</li>
+                            <li>Kenali jalur evakuasi dan lokasi pengungsian yang direkomendasikan PVMBG.</li>
+                        </ul>
+                    </article>
+                    <article class="mitigation-card">
+                        <h3>SAAT BENCANA</h3>
+                        <ul>
+                            <li>Segera evakuasi ke luar dari KRB (Kawasan Rawan Bencana) begitu ada instruksi.</li>
+                            <li>Gunakan pakaian tertutup, masker, dan kacamata saat beraktivitas di luar ruangan.</li>
+                            <li>Hindari daerah lembah atau aliran sungai untuk mengantisipasi bahaya lahar dingin.</li>
+                        </ul>
+                    </article>
+                    <article class="mitigation-card">
+                        <h3>SESUDAH BENCANA</h3>
+                        <ul>
+                            <li>Bersihkan atap rumah dari endapan abu vulkanik agar struktur atap tidak roboh.</li>
+                            <li>Tetap gunakan masker hingga kondisi udara dinyatakan bersih dari abu vulkanik.</li>
+                            <li>Ikuti petunjuk resmi mengenai waktu yang aman untuk kembali ke rumah.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
