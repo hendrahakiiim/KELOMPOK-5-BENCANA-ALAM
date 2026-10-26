@@ -7,7 +7,7 @@
 4. Putu Nova Restiawan-2515091137
 
 ## Deksriosi Website
-Website SIAGA BENCANA merupakan portal edukasi informasi mitigasi dan kesiapsiagaan bencana alam yang dirancang oleh Kelompok 5. Mengingat posisi geografis Indonesia yang berada di wilayah Ring of Fire (Cincin Api Pasifik) dan rawan terhadap potensi bencana alam, website ini hadir sebagai sarana panduan praktis bagi masyarakat dalam mengantisipasi, menghadapi, serta meminimalkan risiko dampak bencana. Portal ini menyediakan materi edukasi khusus mengenai berbagai jenis bencana alam, seperti Gempa Bumi, Tsunami, Banjir, Gunung Meletus, Kebakaran Hutan, dan Tanah Longsor.
+Website SIAGA BENCANA ini merupakan portal edukasi informasi tentang mitigasi dan kesiapsiagaan bencana alam yang dirancang oleh Kelompok 5. Mengingat posisi geografis Indonesia yang berada di wilayah Ring of Fire (Cincin Api Pasifik) dan rawan terhadap potensi bencana alam, website ini hadir sebagai sarana panduan praktis bagi masyarakat dalam mengantisipasi, menghadapi, serta meminimalkan risiko dampak bencana. Portal ini menyediakan materi edukasi khusus mengenai berbagai jenis bencana alam, seperti Gempa Bumi, Tsunami, Banjir, Gunung Meletus, Kebakaran Hutan, dan Tanah Longsor.
 
 1. tujuan website: Memberikan Edukasi Mitigasi, Meningkatkan Kesadaran Masyarakat, Akses Informasi Terpusat
 2. Manfaat Website: Membantu anggota masyarakat dan keluarga mengetahui tindakan penyelamatan diri yang cepat, tepat, dan aman di situasi darurat.
