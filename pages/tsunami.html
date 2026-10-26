@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunami - SIAGA BENCANA</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/responsif.css">
+</head>
+
+<body class="detail-page">
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>SIAGA BENCANA</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Buka Menu" onclick="toggleMenu()">&#9776;</button>
+        <nav class="nav-links" id="navMenu">
+            <a href="../index.html">BERANDA</a>
+            <a href="gempa.html">GEMPA BUMI</a>
+            <a href="tsunami.html" class="active">TSUNAMI</a>
+            <a href="banjir.html">BANJIR</a>
+            <a href="gunung-meletus.html">GUNUNG MELETUS</a>
+            <a href="kebakaran.html">KEBAKARAN HUTAN</a>
+            <a href="longsor.html">LONGSOR</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LAYAR 1: Hero Section (Background bg tsunami.jpg) -->
+        <section class="hero-section bg-tsunami-hero">
+            <div class="hero-content-wrapper">
+                <h2 class="hero-title">Tsunami</h2>
+                <br><br><br><br>
+                <div class="hero-grid">
+                    <!-- Teks Artikel di Kiri -->
+                    <div class="article-text">
+                        <p>Bencana tsunami Aceh pada 26 Desember 2004 yang dipicu gempa megathrust 9,1–9,3 SR di Samudra
+                            Hindia menjadi salah satu tragedi alam terbesar dalam sejarah modern. Gelombang setinggi 30
+                            meter merusak pesisir Aceh hingga menjangkau Thailand, Sri Lanka, India, dan Afrika, serta
+                            merenggut sekitar 230.000 jiwa. Minimnya sistem peringatan dini dan kesiapsiagaan saat itu
+                            memperparah jumlah korban serta kerusakan infrastruktur di wilayah pesisir.</p>
+                        <p>Tragedi ini menjadi titik balik reformasi manajemen bencana di Indonesia, yang mendorong
+                            pengesahan UU No. 24 Tahun 2007 dan pembentukan BNPB. Pendekatan penanggulangan bencana
+                            bergeser dari sekadar respons reaktif menjadi tindakan preventif dan mitigasi. Kini,
+                            Indonesia telah memperkuat kesiapsiagaan melalui pembangunan sistem peringatan dini tsunami
+                            di Samudra Hindia, pemetaan risiko, serta edukasi evakuasi berkala bagi masyarakat pesisir.
+                        </p>
+                    </div>
+
+                    <!-- Foto Lingkaran di Kanan -->
+                    <div class="single-image-circle">
+                        <img src="../Foto/tsunami aceh.jpg" alt="Tsunami Aceh">
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-bar">
+                <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+            </div>
+        </section>
+
+        <!-- LAYAR 2: Panduan Mitigasi -->
+        <section class="mitigation-section">
+            <div class="container">
+                <h2 class="section-title">PANDUAN KESIAPSIAGAAN TSUNAMI</h2>
+                <p class="section-subtitle">Tsunami dapat dipicu oleh gempa bumi di dasar laut. Memahami tanda-tanda
+                    alam awal adalah kunci utama keselamatan.</p>
+
+                <div class="mitigation-cards">
+                    <article class="mitigation-card">
+                        <h3>SEBELUM BENCANA</h3>
+                        <ul>
+                            <li>Pahami tanda-tanda tsunami seperti gempa kuat di pantai dan surutnya air laut secara
+                                tiba-tiba.</li>
+                            <li>Ketahui jalur evakuasi menuju dataran tinggi atau bangunan evakuasi terdekat.</li>
+                            <li>Siapkan tas siaga bencana berisi dokumen penting, obat-obatan, dan perbekalan darurat.
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="mitigation-card">
+                        <h3>SAAT BENCANA</h3>
+                        <ul>
+                            <li>Jika merasakan gempa kuat di pantai, segera lari ke tempat tinggi tanpa menunggu
+                                peringatan resmi.</li>
+                            <li>Jauhi area pantai dan tepi sungai.</li>
+                            <li>Utamakan berjalan kaki atau berlari jika terjadi kemacetan kendaraan.</li>
+                        </ul>
+                    </article>
+                    <article class="mitigation-card">
+                        <h3>SESUDAH BENCANA</h3>
+                        <ul>
+                            <li>Tetap berada di tempat tinggi hingga pihak berwenang menyatakan kondisi aman.</li>
+                            <li>Hindari area genangan air tsunami karena berisiko adanya reruntuhan dan bahan berbahaya.
+                            </li>
+                            <li>Gunakan air bersih yang terjamin steril untuk minum dan memasak.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
