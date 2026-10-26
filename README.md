@@ -127,14 +127,15 @@ Fungsi: Mengubah tata letak horizontal menjadi vertikal (column) pada perangkat 
 ```
 
 ## Struktur Folder
-Berikut adalah susunan struktur berkas dan direktori dari proyek KELOMPOK-5-BENCANA-ALAM:
+
+Berikut adalah struktur direktori dan susunan berkas dari proyek **KELOMPOK-5-BENCANA-ALAM**:
+
+```text
 KELOMPOK-5-BENCANA-ALAM/
-│
 ├── css/
-│   ├── responsif.css        # Stylesheet khusus pengaturan Media Queries & Responsive Design
-│   └── style1.css           # Stylesheet utama (Reset, layouting, warna, font, & animasi)
-│
-├── Foto/                    # Aset gambar background, galeri, dan studi kasus bencana
+│   ├── responsif.css        # Stylesheet khusus Media Queries & Responsive Design
+│   └── style1.css           # Stylesheet utama (Reset, layouting, warna, & animasi)
+├── Foto/                    # Aset gambar background, galeri, dan studi kasus
 │   ├── banjir 1.jpg
 │   ├── banjir 2.jpg
 │   ├── banjir 3.jpg
@@ -157,17 +158,16 @@ KELOMPOK-5-BENCANA-ALAM/
 │   ├── kebakaran hutan 2.jpg
 │   ├── longsor 1.jpg
 │   └── tsunami aceh.jpg
-│
-├── pages/                   # Halaman detail edukasi & mitigasi tiap kategori bencana
-│   ├── banjir.html          # Halaman informasi & mitigasi banjir
-│   ├── gempa.html           # Halaman informasi & mitigasi gempa bumi
-│   ├── gunung-meletus.html  # Halaman informasi & mitigasi gunung meletus
-│   ├── kebakaran.html       # Halaman informasi & mitigasi kebakaran hutan
-│   ├── longsor.html         # Halaman informasi & mitigasi tanah longsor
-│   └── tsunami.html         # Halaman informasi & mitigasi tsunami
-│
+├── pages/                   # Halaman detail edukasi & mitigasi per bencana
+│   ├── banjir.html          # Informasi & panduan mitigasi banjir
+│   ├── gempa.html           # Informasi & panduan mitigasi gempa bumi
+│   ├── gunung-meletus.html  # Informasi & panduan mitigasi gunung meletus
+│   ├── kebakaran.html       # Informasi & panduan mitigasi kebakaran hutan
+│   ├── longsor.html         # Informasi & panduan mitigasi tanah longsor
+│   └── tsunami.html         # Informasi & panduan mitigasi tsunami
 ├── index.html               # Halaman beranda utama portal website
 └── README.md                # Dokumentasi proyek website
+```
 
 ## Website dan Repository
 Website: https://hendrahakiiim.github.io/KELOMPOK-5-BENCANA-ALAM/
