@@ -125,3 +125,102 @@ Responsif Layar Smartphone (max-width: 600px):
 }
 Fungsi: Mengubah tata letak horizontal menjadi vertikal (column) pada perangkat HP agar konten teks dan gambar mudah dibaca tanpa terpotong, serta mengubah kartu mitigasi menjadi 1 kolom penuh.
 ```
+
+## Struktur Folder
+Berikut adalah susunan struktur berkas dan direktori dari proyek KELOMPOK-5-BENCANA-ALAM:
+KELOMPOK-5-BENCANA-ALAM/
+│
+├── css/
+│   ├── responsif.css        # Stylesheet khusus pengaturan Media Queries & Responsive Design
+│   └── style1.css           # Stylesheet utama (Reset, layouting, warna, font, & animasi)
+│
+├── Foto/                    # Aset gambar background, galeri, dan studi kasus bencana
+│   ├── banjir 1.jpg
+│   ├── banjir 2.jpg
+│   ├── banjir 3.jpg
+│   ├── bg banjir.jpg
+│   ├── bg gempa bumi.jpg
+│   ├── bg gunung meletus.jpg
+│   ├── bg kebakaran hutan.jpg
+│   ├── bg longsor.jpg
+│   ├── bg tsunami.jpg
+│   ├── foto 1 kebakaran hutan.jpg
+│   ├── foto 2.jpg
+│   ├── gempa 1.jpg
+│   ├── gempa 2.jpg
+│   ├── gempa cianjur.jpg
+│   ├── gunung agung.jpg
+│   ├── gunung krakatau.jpg
+│   ├── gunung merapi.jpg
+│   ├── gunung tambora.jpg
+│   ├── kebakaran hutan 1.jpg
+│   ├── kebakaran hutan 2.jpg
+│   ├── longsor 1.jpg
+│   └── tsunami aceh.jpg
+│
+├── pages/                   # Halaman detail edukasi & mitigasi tiap kategori bencana
+│   ├── banjir.html          # Halaman informasi & mitigasi banjir
+│   ├── gempa.html           # Halaman informasi & mitigasi gempa bumi
+│   ├── gunung-meletus.html  # Halaman informasi & mitigasi gunung meletus
+│   ├── kebakaran.html       # Halaman informasi & mitigasi kebakaran hutan
+│   ├── longsor.html         # Halaman informasi & mitigasi tanah longsor
+│   └── tsunami.html         # Halaman informasi & mitigasi tsunami
+│
+├── index.html               # Halaman beranda utama portal website
+└── README.md                # Dokumentasi proyek website
+
+## Website dan Repository
+Website: https://hendrahakiiim.github.io/KELOMPOK-5-BENCANA-ALAM/
+Repository: https://github.com/hendrahakiiim/KELOMPOK-5-BENCANA-ALAM.git
+
+## Referensi
+### Gambar 
+KEBAKARAN HUTAN
+https://id.pinterest.com/pin/265501340528520669/
+https://id.pinterest.com/pin/158118636910820488/ 
+https://id.pinterest.com/pin/738379301393312838/ 
+
+GUNUNG MELETUS
+https://id.pinterest.com/pin/183521753550514943/
+https://id.pinterest.com/pin/385480049328695505/ 
+https://id.pinterest.com/pin/835558537089054133/ 
+https://id.pinterest.com/pin/792211390723183609/ 
+https://id.pinterest.com/pin/81275968254599288/
+
+TSUNAMI
+https://id.pinterest.com/pin/474215035781530506/
+https://id.pinterest.com/pin/728668414686857061/
+
+GEMPA BUMI 
+https://id.pinterest.com/pin/850124867238760564/
+https://id.pinterest.com/pin/850124867238760605/
+https://id.pinterest.com/pin/850124867238760601/
+ 
+BANJIR 
+https://id.pinterest.com/pin/850124867238760690/ 
+https://id.pinterest.com/pin/850124867238760795/
+https://id.pinterest.com/pin/850124867238760745/ 
+https://id.pinterest.com/pin/850124867238760747/ 
+
+LONGSOR 
+https://id.pinterest.com/pin/850124867238760842/ 
+https://id.pinterest.com/pin/850124867238760806/ 
+
+### ARTIKEL
+KEBAKARAN HUTAN
+https://ksdae.kehutanan.go.id/publikasi/artikel/karhutla-mengancam-kehidupan-satwa-liar-di-kalimantan-selatan-qxdqttoF/
+
+GUNUNG MELETUS
+ http://eigeradventure.com/blog/letusan-gunung-terdahsyat-di-indonesia/
+
+TSUNAMI
+https://sejarah.dibi.bnpb.go.id/artikel/kilas-balik-sejarah-dua-dekade-tsunami-aceh/83
+
+BANJIR
+https://bnpb.go.id/berita/banjir-terjang-dua-wilayah-di-bali-satu-orang-meninggal-dunia
+
+GEMPA BUMI
+https://id.wikipedia.org/wiki/Gempa_bumi_Cianjur_2022
+
+LONGSOR
+http://bpba.acehprov.go.id/berita/kategori/bencana/tanah-longsor-di-aceh-jaya-tiga-orang-meninggal-dunia-dan-empat-lainnya-menjadi-korban
