@@ -156,3 +156,343 @@ body.home-page footer {
     font-size: 12px;
     color: #5c4939;
 }
+
+/* =================================================== */
+/* 3. LAYAR 1 HERO SECTION (PAGES DETAIL BENCANA)     */
+/* =================================================== */
+.hero-section {
+    width: 100%;
+    min-height: calc(100vh - 58px);
+    position: relative;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Foto Background Utama */
+.bg-gempa-hero { background-image: url('../Foto/bg gempa bumi.jpg'); }
+.bg-tsunami-hero { background-image: url('../Foto/bg tsunami.jpg'); }
+.bg-banjir-hero { background-image: url('../Foto/bg banjir.jpg'); }
+.bg-gunung-hero { background-image: url('../Foto/bg gunung meletus.jpg'); }
+.bg-kebakaran-hero { background-image: url('../Foto/bg kebakaran hutan.jpg'); }
+.bg-longsor-hero { background-image: url('../Foto/bg longsor.jpg'); }
+
+/* Overlay Transparan Gelap Tanpa Blur Warna Krem */
+.hero-content-wrapper {
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    flex: 1;
+    padding: 20px 60px 30px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero-grid {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 1250px;
+}
+
+/* Kontainer 2 Foto Sisi Kiri (Gempa & Kebakaran) */
+.side-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 360px;
+    flex-shrink: 0;
+}
+
+.side-images img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+/* Foto Lingkaran (Tsunami & Longsor) */
+.single-image-circle {
+    width: 320px;
+    height: 320px;
+    flex-shrink: 0;
+}
+
+.single-image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* 3 Foto Berjejer (Banjir) */
+.triple-images-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.triple-images-row img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.article-text-center {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.article-text-center p {
+    font-size: 14.5px;
+    line-height: 1.65;
+    margin-bottom: 14px;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Grid 4 Gunung (Gunung Meletus) */
+.volcano-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto 25px auto;
+}
+
+.volcano-item {
+    text-align: center;
+    color: #ffffff;
+}
+
+.volcano-item h4 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.volcano-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    margin-bottom: 6px;
+}
+
+.volcano-item span {
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Teks Artikel Standar */
+.article-text {
+    flex: 1;
+}
+
+.article-text p {
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 14px;
+    text-align: justify;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Garis Batas Gelap Pemisah Layar */
+.divider-bar {
+    background-color: #3b3735;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 11px;
+    width: 100%;
+}
+
+/* =================================================== */
+/* 4. LAYAR 2 SECTION MITIGASI (PANDUAN KESIAPSIAGAAN) */
+/* =================================================== */
+.mitigation-section {
+    background-color: #f7f5f0;
+    padding: 60px 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    color: #5c4939;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 13.5px;
+    color: #635851;
+    max-width: 750px;
+    margin: 0 auto 40px auto;
+    line-height: 1.5;
+}
+
+.mitigation-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.mitigation-card {
+    background-color: #e2ded8;
+    padding: 28px 22px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.mitigation-card h3 {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    color: #4a3e3d;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.mitigation-card ul {
+    padding-left: 20px;
+}
+
+.mitigation-card li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #4a3e3d;
+}
+
+/* Footer Utama Standar Halaman Detail */
+footer {
+    border-top: 4px solid #d3c4b1;
+    border-bottom: 4px solid #d3c4b1;
+    padding: 12px 0;
+    text-align: center;
+    background-color: #f7f5f0;
+    font-size: 12px;
+    color: #5c4939;
+}
+
+/* =================================================== */
+/* ANIMASI EFEK INTERAKTIF & VISUAL (CSS ONLY)          */
+/* =================================================== */
+
+/* 1. Animasi Denyut Halus pada Logo Header */
+.logo h1 {
+    animation: pulseLogo 4s ease-in-out infinite;
+}
+
+@keyframes pulseLogo {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+/* 2. Animasi Garis Bawah Navigasi saat Hover */
+.nav-links a {
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8c6d53;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* 3. Animasi Zoom & Kilauan Lembut pada Foto Artikel/Galeri */
+.triple-images-row img,
+.side-images img,
+.single-image-circle img,
+.volcano-item img {
+    transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+}
+
+.triple-images-row img:hover,
+.side-images img:hover,
+.single-image-circle img:hover,
+.volcano-item img:hover {
+    transform: scale(1.04) translateY(-4px);
+    filter: brightness(1.08);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.6);
+}
+
+/* 4. Animasi Fade-In Halus untuk Judul Hero saat Halaman Dimuat */
+.hero-title {
+    animation: fadeInTitle 1.2s ease-out forwards;
+}
+
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 5. Animasi Teks Paragraf Muncul Perlahan */
+.article-text-center p,
+.article-text p{
+    animation: fadeInText 1.5s ease-out forwards;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
