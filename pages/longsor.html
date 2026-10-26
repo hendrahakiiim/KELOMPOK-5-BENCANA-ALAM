@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longsor - SIAGA BENCANA</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/responsif.css">
+</head>
+
+<body class="detail-page">
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>SIAGA BENCANA</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Buka Menu" onclick="toggleMenu()">&#9776;</button>
+        <nav class="nav-links" id="navMenu">
+            <a href="../index.html">BERANDA</a>
+            <a href="gempa.html">GEMPA BUMI</a>
+            <a href="tsunami.html">TSUNAMI</a>
+            <a href="banjir.html">BANJIR</a>
+            <a href="gunung-meletus.html">GUNUNG MELETUS</a>
+            <a href="kebakaran.html">KEBAKARAN HUTAN</a>
+            <a href="longsor.html" class="active">LONGSOR</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LAYAR 1: Hero Section (Background bg longsor.jpg) -->
+        <section class="hero-section bg-longsor-hero">
+            <div class="hero-content-wrapper">
+                <h2 class="hero-title">Longsor</h2>
+                <br>
+                <div class="hero-grid">
+                    <!-- Foto Lingkaran di Kanan -->
+                    <div class="single-image-circle">
+                        <img src="../Foto/longsor 1.jpg" alt="Bencana Tanah Longsor">
+                    </div>
+                    <br>
+                    <!-- Teks Artikel di Kiri -->
+                    <div class="article-text">
+                        <p>Banjir dan tanah longsor melanda Kabupaten Lombok Barat, Lombok Tengah, Lombok Utara, serta
+                            Sumbawa Barat pada 9-10 Januari 2009 akibat curah hujan tinggi. Pendangkalan sungai dan
+                            tumpukan kayu membendung aliran sungai di hulu sehingga memicu banjir bandang. Bencana ini
+                            merusak 30 rumah, memutus saluran air bersih, dan merusak jembatan. Menurut PMI di Lombok
+                            Barat dan Sumbawa, kerugian mencapai lebih dari Rp3 miliar, yang disertai terputusnya
+                            pasokan listrik untuk sekitar 1.150 KK.</p>
+                        <p>Sebagai bentuk penanganan dan pencegahan, masyarakat diimbau untuk selalu waspada saat hujan
+                            deras, tidak memotong vegetasi di lereng untuk lahan permukiman atau kebun, serta siap
+                            mengungsi jika diperlukan. Langkah mitigasi jangka panjang mencakup reboisasi hutan di
+                            kawasan lereng tengah dan atas; pengendalian luncuran lumpur dengan cekdam; serta perbaikan
+                            alur sungai menggunakan tanggul dan tembok penahan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-bar">
+                <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+            </div>
+        </section>
+
+        <!-- LAYAR 2: Panduan Mitigasi -->
+        <section class="mitigation-section">
+            <div class="container">
+                <h2 class="section-title">PANDUAN KESIAPSIAGAAN TANAH LONGSOR</h2>
+                <p class="section-subtitle">Tanah longsor terjadi pada wilayah lereng atau perbukitan akibat pergerakan
+                    massa tanah setelah diguyur hujan deras.</p>
+
+                <div class="mitigation-cards">
+                    <article class="mitigation-card">
+                        <h3>SEBELUM BENCANA</h3>
+                        <ul>
+                            <li>Hindari membangun pemukiman di bawah lereng curam.</li>
+                            <li>Perhatikan tanda-tanda seperti retakan di tanah, tembok rumah, atau pohon yang miring.
+                            </li>
+                            <li>Lakukan reboisasi dan penanaman pohon berakar dalam di area lereng.</li>
+                        </ul>
+                    </article>
+                    <article class="mitigation-card">
+                        <h3>SAAT BENCANA</h3>
+                        <ul>
+                            <li>Segera evakuasi diri menjauh dari arah pergerakan tanah atau suara gemuruh.</li>
+                            <li>Jika tidak sempat melarikan diri, meringkuklah membentuk lingkaran dan lindungi kepala
+                                Anda.</li>
+                            <li>Bantu membunyikan tanda bahaya (seperti kentongan) untuk memperingatkan warga lain.</li>
+                        </ul>
+                    </article>
+                    <article class="mitigation-card">
+                        <h3>SESUDAH BENCANA</h3>
+                        <ul>
+                            <li>Jangan mendekati area bekas longsor karena potensi longsor susulan masih tinggi.</li>
+                            <li>Laporkan korban yang tertimbun kepada tim SAR atau petugas evakuasi.</li>
+                            <li>Ikuti arahan petunjuk keselamatan dari tim penanggulangan bencana.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Web Kelompok 5 - Portal Siaga Bencana & Edukasi Mitigasi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
