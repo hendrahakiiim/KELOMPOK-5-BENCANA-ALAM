@@ -410,7 +410,7 @@ footer {
 }
 
 /* =================================================== */
-/* ANIMASI EFEK INTERAKTIF & VISUAL (CSS ONLY)          */
+/* ANIMASI EFEK INTERAKTIF & VISUAL                    */
 /* =================================================== */
 
 /* 1. Animasi Denyut Halus pada Logo Header */
@@ -469,16 +469,17 @@ footer {
 /* 4. Animasi Fade-In Halus untuk Judul Hero saat Halaman Dimuat */
 .hero-title {
     animation: fadeInTitle 1.2s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
 @keyframes fadeInTitle {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-40px); /* Mulai dari posisi 30px di bawah */
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0);    /* Bergeser ke posisi normal */
     }
 }
 
@@ -486,13 +487,118 @@ footer {
 .article-text-center p,
 .article-text p{
     animation: fadeInText 1.5s ease-out forwards;
+    animation-delay: 0.5s;
 }
 
 @keyframes fadeInText {
     from {
         opacity: 0;
+        transform: translateY(20px); /* Mulai dari posisi 20px di bawah */
     }
     to {
         opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 1. Beranda (index.html) - Kartu bencana muncul berurutan */
+.card:nth-child(1) { 
+    animation: fadeInImage 1s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+.card:nth-child(2) { 
+    animation: fadeInImage 1s ease-out forwards; 
+    animation-delay: 0.4s; 
+    opacity: 0; 
+}
+.card:nth-child(3) { 
+    animation: fadeInImage 1s ease-out forwards; 
+    animation-delay: 0.6s; 
+    opacity: 0; 
+}
+.card:nth-child(4) { 
+    animation: fadeInImage 1s ease-out forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+.card:nth-child(5) { 
+    animation: fadeInImage 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.card:nth-child(6) { 
+    animation: fadeInImage 1s ease-out forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+
+/* 2. Halaman Detail (Gempa & Kebakaran - 2 Foto Samping) */
+.side-images img:nth-child(1) { 
+    animation: fadeInImage 1s ease-out forwards; 
+    animation-delay: 0.3s; 
+    opacity: 0; 
+}
+.side-images img:nth-child(2) { 
+    animation: fadeInImage 1s ease-out forwards; 
+    animation-delay: 0.5s; 
+    opacity: 0; 
+}
+
+/* 3. Halaman Detail (Banjir - 3 Foto Berjejer) */
+.triple-images-row img:nth-child(1) { 
+    animation: fadeInImage 1s ease-out forwards; 
+    animation-delay: 0.3s; 
+    opacity: 0; 
+}
+.triple-images-row img:nth-child(2) { 
+    animation: fadeInImage 1s ease-out forwards; 
+    animation-delay: 0.5s; 
+    opacity: 0; 
+}
+.triple-images-row img:nth-child(3) { 
+    animation: fadeInImage 1s ease-out forwards; 
+    animation-delay: 0.7s; 
+    opacity: 0; 
+}
+
+/* 4. Halaman Detail (Gunung Meletus - 4 Foto Grid) */
+.volcano-item:nth-child(1) img { 
+    animation: fadeInImage 1s ease-out forwards;
+     animation-delay: 0.2s; 
+     opacity: 0; 
+    }
+.volcano-item:nth-child(2) img { 
+    animation: fadeInImage 1s ease-out forwards; 
+    animation-delay: 0.4s; 
+    opacity: 0; 
+}
+.volcano-item:nth-child(3) img {
+    animation: fadeInImage 1s ease-out forwards; 
+    animation-delay: 0.6s; 
+    opacity: 0; 
+}
+.volcano-item:nth-child(4) img { 
+    animation: fadeInImage 1s ease-out forwards; 
+    animation-delay: 0.8s; 
+    opacity: 0; 
+}
+
+/* 5. Foto Tunggal / Lingkaran (Tsunami & Longsor) */
+.single-image-circle img {
+    animation: fadeInImage 1s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+/* Animasi umum untuk foto muncul dari bawah */
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
